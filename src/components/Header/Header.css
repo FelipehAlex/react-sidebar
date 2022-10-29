@@ -1,0 +1,103 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+#footer-bar {
+    display: flex;
+    margin-top: 500px;
+    justify-content: center;
+    align-items: center;
+    color: #818181;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #282c34;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 200px;
+}
+
+img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    color: #e45081;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px 20px;
+    transition: 0.3s;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+.button span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+    color: #f1f1f1;
+}
+
+.button:hover span::after {
+    opacity: 1;
+    right: 0;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.button:active {
+    transform: translateX(4px);
+}
+
+.closebtn:active {
+    transform: translateY(4px);
+}
